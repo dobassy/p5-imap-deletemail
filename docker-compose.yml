@@ -1,0 +1,6 @@
+imapcleaner:
+  image: dobassy/imapmail-cleaner:latest
+  container_name: imapmail-cleaner
+  env_file: imap.env
+  volumes:
+    - "/tmp/redmine-log:/home/app/log"
